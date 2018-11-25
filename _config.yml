@@ -114,4 +114,6 @@ theme: Wikitten
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: xzml:xzml/xzml.github.io.git
+  branch: master
