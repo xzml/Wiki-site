@@ -6,6 +6,26 @@ tags: [Ubuntu]
 categories:
 ---
 
+## Ubuntu 安装 gcc-4.9
+
+参考: [Getting + installing gcc/g++ 4.9 on Ubuntu?](https://askubuntu.com/questions/428198/getting-installing-gcc-g-4-9-on-ubuntu)
+
+```bash
+sudo su -
+apt-get install build-essential
+add-apt-repository ppa:ubuntu-toolchain-r/test
+apt-get update
+apt-get install gcc-4.9 g++-4.9 cpp-4.9
+
+cd /usr/bin
+rm gcc g++ cpp
+ln -s gcc-4.9 gcc
+ln -s g++-4.9 g++
+ln -s cpp-4.9 cpp
+```
+
+除了使用软连接, 还可以使用 `update-alternatives` 来修改 `gcc` 默认的版本, 具体可以参考上面的参考资料.
+
 ## systemctl: command not found
 
 参考: [systemctl: command not found on ubuntu 16.04](https://askubuntu.com/questions/988266/systemctl-command-not-found-on-ubuntu-16-04)

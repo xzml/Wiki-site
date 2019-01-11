@@ -15,6 +15,46 @@ categories:
 
 ## 安装 oh-my-zsh
 
+可供参考的资料:
+
++ [https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
++ [https://www.howtoforge.com/tutorial/how-to-setup-zsh-and-oh-my-zsh-on-linux/](https://www.howtoforge.com/tutorial/how-to-setup-zsh-and-oh-my-zsh-on-linux/)
+
+在 Ubuntu 上, 使用:
+
+```bash
+sudo apt-get install zsh
+chsh -s $(which zsh) # make your default shell
+export SHELL=/bin/zsh # if the above command has no effect
+exec $SHELL
+sudo apt-get install wget git
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+source ~/.zshrc
+```
+
+### 安装插件
+
+[Become A Command-Line Power User With Oh My ZSH And Z](https://www.smashingmagazine.com/2015/07/become-command-line-power-user-oh-my-zsh-z/)
+
+在 `~/.zshrc` 中修改 `plugins` 那一行:
+
+```bash
+plugins=(git vi-mode z)
+```
+
+要使用 `z` 的话, 需要先下载 [z.sh](https://github.com/rupa/z/blob/master/z.sh)
+
+```bash
+wget https://github.com/rupa/z/blob/master/z.sh
+mv z.sh ~/.z
+exec $SHELL
+```
+
+上面这种安装方法我认为是最简单的了, 另外还有一种方法可以参考:
+
+[Boost Productivity with Z and Zsh on Ubuntu](https://www.vultr.com/docs/boost-productivity-with-z-and-zsh-on-ubuntu)
+
 
 ## Pyenv 管理多版本的 Python
 
