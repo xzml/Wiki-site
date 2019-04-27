@@ -9,6 +9,7 @@ categories:
 ## Git 相关
 
 - [An interactive git visualization to challenge and educate!](https://github.com/pcottle/learnGitBranching) 将 Git 的操作可视化, 我觉得之后对于 Git 的学习会很有帮助!
+- [Visualizing Git](https://git-school.github.io/visualizing-git/) 可视化 Git, 真的好用啊, 对概念体会更深
 
 ## 科研
 
