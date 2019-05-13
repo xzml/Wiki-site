@@ -6,6 +6,10 @@ tags: [Resource]
 categories:
 ---
 
+## 机器学习
+
+- [机器学习路线图](https://github.com/apachecn/AiLearning) 资料很全, 可以参考
+
 ## Git 相关
 
 - [An interactive git visualization to challenge and educate!](https://github.com/pcottle/learnGitBranching) 将 Git 的操作可视化, 我觉得之后对于 Git 的学习会很有帮助!
