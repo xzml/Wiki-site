@@ -137,6 +137,11 @@ conda config --set show_channel_urls yes
 ```
 
 
+## tmux 相关
+
++ tmux 搜索不到配置文件的处理方法
+
+根据 [https://unix.stackexchange.com/questions/66606/tmux-not-sourcing-my-tmux-conf](https://unix.stackexchange.com/questions/66606/tmux-not-sourcing-my-tmux-conf) 的介绍, 如果 tmux 搜索不到 .tmux.conf 配置文件, 那么可以先使用默认的快捷键 `Ctrl+B`, 然后输入 `:` 冒号, 类似于 vim 的命令模式, 再输入命令 `source-file ~/.tmux.conf`
 
 
 
